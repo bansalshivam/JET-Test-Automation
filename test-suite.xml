@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Takeaway Automation Tests" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="de.lieferando.utility.TestEventListener" />
+    </listeners>
+    <test name="Take away sanity for WEB and API">
+        <classes>
+            <class name="de.lieferando.ui.testcases.SearchAndFilterRestaurantTest"/>
+            <class name="de.lieferando.api.testcases.ChickenApiTest"/>
+        </classes>
+    </test>
+</suite>
